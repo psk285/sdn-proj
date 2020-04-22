@@ -65,8 +65,8 @@ def populate_flow_table():
   f = open('paths.file','r')
   for line in f:
     currentline = line
-    x_list = currentline.split(':')
-    flowtable[(x_list[0],x_list[1])] = x_list[2].rstrip()
+    x_list = currentline.split('->')
+    flowtable[(x_list[0],x_list[2])] = x_list[1].rstrip()
 
 #This method is called when a link is created between switch
 def _handle_links (event):
