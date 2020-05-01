@@ -1,0 +1,33 @@
+Steps to run the project:
+
+1) We will be using POX controller to demonstrate load balancing.
+
+2) We will be running POX controller on our localhost on port 6633.
+
+3)Now, we will start the pox controller.
+
+4) POX controller will be on listening mode now and we will be also seeing the logs in the terminal.
+
+5)Now we will create a custom topology with 3 switches and 3 hosts.
+
+6) First, we will delete any previous topology created.
+
+7) After the topology is created, we will test if it is working properly.
+
+8)Now we will set up HTTP web server on host h1 and access it from hosts h2 and h3.
+
+9) Once the server is set up, we will generate traffic by using wget from h2 and h3.
+
+10) Now we will have to wait for 2-3 minutes.Then afterwards we will run the ping scripts and check the new paths generated if any in case of congestion.
+
+11) We will use the ComputeNewPaths file to check for any congestion and it will provides us with some new best alternative path in case of congestion.
+
+12) We have run the ping scripts  and now we will run the ComputeNewPaths file to get the results as discussed above. It will discover new paths based on ping values between two hosts.
+
+13) The ComputeNewPaths file output is saved in output.txt file which will contain the computation results.
+
+14) Now, we will exit from mininet and check the output file.
+
+15) It is suggesting that there is congestion between switches 1 and 3 and thus have suggested us with the new alternate paths.
+
+Thank YOU!!
